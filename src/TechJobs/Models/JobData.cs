@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Text;
@@ -41,6 +42,11 @@ namespace TechJobs.Models
             // Bonus mission: sort results alphabetically
             values.Sort();
             return values;
+        }
+
+        internal static List<Dictionary<string, string>> FindAll(object column)
+        {
+            throw new NotImplementedException();
         }
 
         /**
